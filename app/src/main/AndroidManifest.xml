@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.googleplaygames.dpc.jump_rope_counter_2">
+
+    <application
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.JumpRopeCounter2"
+        tools:ignore="LockedOrientationActivity" >
+        <activity
+            android:name=".SortSetting"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".RecordDetail"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Record"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Counter"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
